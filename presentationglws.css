@@ -90,44 +90,6 @@ header h1 {
 .dropdown2:hover .etudiants-profil {
     display: block;
 }
-
-/* Responsive pour téléphone */
-@media (max-width: 768px) {
- /*Header*/
-
-    header {
-        padding: 5px 0; 
-    }
-
-    header h1 {
-        font-size: 2em; 
-    }
-
-    .navigation-bar {
-        flex-direction: column; 
-        gap: 15px; 
-    }
-
-    .navigation-bar a {
-        font-size: 16px; 
-        padding: 8px 15px; 
-    }
-    .dropdown,.dropdown2 {
-        float: center;
-        overflow: hidden;
-    }
-    .dropdown-content, .etudiants-profil {
-        position: static; 
-        width: 100%; 
-        text-align: center; 
-        display: none; 
-    }
-    .dropdown.active .dropdown-content,
-    .dropdown2.active .etudiants-profil {
-        display: block;
-    }
-}
-
 .presentation-box {
     margin: 20px auto;
     padding: 20px;
@@ -251,8 +213,42 @@ body {
     justify-content: space-between; 
     gap: 15px; 
 }
+    /* Responsive pour téléphone */
+@media (max-width: 768px) {
+ /*Header*/
 
-.navigation-bar a {
+    header {
+        padding: 5px 0; 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .navigation-bar {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .navigation-bar a {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+    .dropdown,.dropdown2 {
+        float: center;
+        overflow: hidden;
+    }
+    .dropdown-content, .etudiants-profil {
+        position: static; 
+        width: 100%; 
+        text-align: center; 
+        display: none; 
+    }
+    .dropdown.active .dropdown-content,
+    .dropdown2.active .etudiants-profil {
+        display: block;
+    }
+    .navigation-bar a {
     font-size: 18px; 
     flex: 1; 
     text-align: center; 
