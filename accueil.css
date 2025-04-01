@@ -91,74 +91,7 @@ header h1 {
     display: block;
 }
 
-/* Responsive pour téléphone */
-@media (max-width: 768px) {
- /*Header*/
 
-    header {
-        padding: 5px 0; 
-    }
-
-    header h1 {
-        font-size: 2em; 
-    }
-
-    .navigation-bar {
-        flex-direction: column; 
-        gap: 15px; 
-    }
-
-    .navigation-bar a {
-        font-size: 16px; 
-        padding: 8px 15px; 
-    }
-    .dropdown,.dropdown2 {
-        float: center;
-        overflow: hidden;
-    }
-    .dropdown-content, .etudiants-profil {
-        position: static; 
-        width: 100%; 
-        text-align: center; 
-        display: none; 
-    }
-    .dropdown.active .dropdown-content,
-    .dropdown2.active .etudiants-profil {
-        display: block;
-    }
-    /*Présentation*/
-@media (max-width: 750px) {
-    .introduction img {
-        max-width: 60%; 
-
-    }
-}
-@media (max-width: 480px) {
-    .introduction img {
-        max-width: 60%; 
-    }
-}
-/*Imagespaysage*/
-    /*Cadrillage des services */
-    @media (max-width: 768px) {
-        .grid-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .stats-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .grid-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .stats-container {
-            grid-template-columns: 1fr;
-        }
-    }
-    
-}
 /*Présentation de la société*/
 
 .introduction {
@@ -508,10 +441,8 @@ body {
     font-size: 18px; 
     flex: 1; 
     text-align: center; 
-}
-    
+} 
 /* Contact Container */
-
 #contact-container {
     flex-direction: column;
     gap: 20px; 
@@ -619,3 +550,65 @@ footer div p {
     color: #cccccc;
 }
 }
+    /* Responsive pour téléphone */
+@media (max-width: 768px) {
+ /*Header*/
+
+    header {
+        padding: 5px 0; 
+    }
+    header h1 {
+        font-size: 2em; 
+    }
+    .navigation-bar {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .navigation-bar a {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+    .dropdown,.dropdown2 {
+        float: center;
+        overflow: hidden;
+    }
+    .dropdown-content, .etudiants-profil {
+        position: static; 
+        width: 100%; 
+        text-align: center; 
+        display: none; 
+    }
+    .dropdown.active .dropdown-content,
+    .dropdown2.active .etudiants-profil {
+        display: block;
+    }
+    /*Présentation*/
+@media (max-width: 750px) {
+    .introduction img {
+        max-width: 60%; 
+
+    }
+}
+@media (max-width: 480px) {
+    .introduction img {
+        max-width: 60%; 
+    }
+}
+    /*Cadrillage des services */
+    @media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .stats-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .stats-container {
+            grid-template-columns: 1fr;
+        }
+    }   
