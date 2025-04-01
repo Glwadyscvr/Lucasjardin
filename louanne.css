@@ -44,6 +44,14 @@ header h1 {
     flex-wrap:wrap;
     overflow:hidden;
 }
+.navigation-bar { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0; 
+    flex-wrap:wrap;
+    overflow:hidden;
+}
 
 .navigation-bar a , .dropbtn, .etudiants{ 
     padding: 5px 10px; 
@@ -89,6 +97,43 @@ header h1 {
 .dropdown:hover .dropdown-content,
 .dropdown2:hover .etudiants-profil {
     display: block;
+}
+
+/* Responsive pour téléphone */
+@media (max-width: 768px) {
+ /*Header*/
+
+    header {
+        padding: 5px 0; 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .navigation-bar {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .navigation-bar a {
+        font-size: 16px; 
+        padding: 8px 15px; 
+    }
+    .dropdown,.dropdown2 {
+        float: center;
+        overflow: hidden;
+    }
+    .dropdown-content, .etudiants-profil {
+        position: static; 
+        width: 100%; 
+        text-align: center; 
+        display: none; 
+    }
+    .dropdown.active .dropdown-content,
+    .dropdown2.active .etudiants-profil {
+        display: block;
+    }
 }
 /* Partie FAQ */
 
