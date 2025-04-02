@@ -134,23 +134,22 @@ header h1 {
     margin: 20px auto;
     position:relative; 
 }
-/*quadrillage engagement*/
+/*photos engagement*/
 .engagement {
     display: flex; 
     align-items: center; 
     gap: 20px; 
-    margin-left: 200px;
 }
 
 .engagement img {
-    width: 40%; 
+    width: 50%; 
     max-width: 900px;
-    height: 450px; 
+    height: auto; 
     margin: 20px;
     display: block; 
-    aspect-ratio: auto ;
     object-fit: contain;
 }
+
 .ligne-fine{
     border: none;
     height: 1px;
