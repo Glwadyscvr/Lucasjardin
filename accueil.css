@@ -111,12 +111,11 @@ header h1 {
 .introduction h2 {
     display: block; 
 }
-
+/*transition*/
 .transition {
     display: flex;
-    justify-content: center; /* Centre le texte horizontalement */
-    align-items: center; /* Centre verticalement le texte */
-    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
     height: 15vh;
 }
 
@@ -124,18 +123,18 @@ header h1 {
     font-size: 30px; 
     font-weight: bolder;
     text-align: center;
-    position: absolute; /* Place le texte sur le bordereau */
+    position: absolute; 
 } 
 .bordereau {
     border: none;
-    height: 100px;
+    height: 20px;
     opacity: 50%;
     background-color: rgb(180, 180, 180);
-    width: 50%;
-    margin: 5px auto;
-    position: relative; /* Permet de positionner le texte par rapport au bordereau */
+    width: 70%;
+    margin: 20px auto;
+    position:relative; 
 }
-
+/*quadrillage engagement*/
 .engagement {
     display: flex; 
     align-items: center; 
@@ -205,7 +204,7 @@ header h1 {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeSlideUp 0.8s ease-out forwards;
-    animation-delay: 1s; /* Modifie le délai si besoin */
+    animation-delay: 1s; 
 }
 @keyframes fadeSlideUp {
     from {
@@ -283,7 +282,7 @@ header h1 {
 }
 .grid-item a:hover {
     text-decoration: none;
-    color: #a7a7a7; /* Change de couleur (jaune or) */
+    color: #a7a7a7;
 }
 
 /* Formulaire */
@@ -449,12 +448,6 @@ body {
     padding: 15px;
 }
     
-/* Map */
-
-#map-container iframe {
-    width: 100%; 
-    height: 300px; 
-}
 
 /* Formulaire */
 
