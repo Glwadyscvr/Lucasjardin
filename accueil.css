@@ -603,4 +603,8 @@ footer div p {
         .stats-container {
             grid-template-columns: 1fr;
         }
+        .engagement {
+    display: flex; 
+    flex-direction: column;
+}
     }   
