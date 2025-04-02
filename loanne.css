@@ -282,7 +282,10 @@ main section ul li {
     color: #577158;
     margin-bottom: 5px;
 }
-
+a{
+    color: inherit;
+    text-decoration: none;   
+}
 
  /*Footer*/
 
