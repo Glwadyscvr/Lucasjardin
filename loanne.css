@@ -241,6 +241,9 @@ section {
     height: 40px;
     line-height: 40px;
 }
+li{
+    list-style-type: none;
+ }
 /* fiche loanne */ 
 
 main {
