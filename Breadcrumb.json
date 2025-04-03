@@ -1,0 +1,26 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",  // Définit le vocabulaire schema.org
+    "@type": "BreadcrumbList",  // Indique qu'il s'agit d'une liste de navigation / fil d'Ariane
+    "itemListElement": [  // Début de la liste des éléments du fil d'Ariane
+      {
+        "@type": "ListItem",  // Définit un élément de la liste
+        "position": 1,  // Position dans la hiérarchie du fil d'Ariane
+        "name": "Accueil",  // Nom de la première page (généralement la page d'accueil)
+        "item": "https://plomberie-mariobros.fr"  // URL de la page d'accueil
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,  // Deuxième niveau de navigation
+        "name": "Nos services",  // Page des services proposés par l'entreprise
+        "item": "https://plomberie-mariobros.fr/services.html"  // URL de la page des services
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,  // Troisième niveau de navigation
+        "name": "Dépannage plomberie",  // Service spécifique listé sous "Nos services"
+        "item": "https://plomberie-mariobros.fr/depannage-plomberie.html"  // URL de la page spécifique au dépannage
+      }
+    ]
+  }
+</script>
