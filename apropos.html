@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Lucas Jardin - Jardinier paysagiste à Nice depuis 25 ans. Création et entretien d'espaces verts professionnels.">
     
+    <!-- Preload resources -->
+    <link rel="preload" href="apropos.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lucasjardins.com/apropos.html">
@@ -14,10 +19,6 @@
     <meta property="og:image" content="https://www.lucasjardins.com/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
-    <!-- Préchargement CSS -->
-    <link rel="preload" href="apropos.css" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     
     <!-- CSS -->
     <link rel="stylesheet" href="apropos.css">
@@ -116,11 +117,14 @@
         <div class="paire-contenu">
             <div class="image-container">
                 <img src="images/1apropos.avif" 
+                     srcset="images/1apropos.avif 800w, images/1apropos-small.avif 400w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
                      alt="Jardin entretenu par Lucas Jardins" 
                      class="img1"
                      loading="eager"
                      width="800"
-                     height="600">
+                     height="600"
+                     decoding="async">
             </div>
             <div class="texte-container">
                 <div class="presentation">
@@ -136,10 +140,13 @@
         <div class="paire-contenu inverse">
             <div class="image-container">
                 <img src="images/a_propos-equipe-dynamique.avif" 
+                     srcset="images/a_propos-equipe-dynamique.avif 800w, images/a_propos-equipe-dynamique-small.avif 400w"
+                     sizes="(max-width: 768px) 100vw, 50vw"
                      alt="Notre équipe en action" 
                      loading="lazy"
                      width="800"
-                     height="600">
+                     height="600"
+                     decoding="async">
             </div>
             <div class="texte-container">
                 <div class="presentation">
