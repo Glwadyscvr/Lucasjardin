@@ -8,8 +8,89 @@
     <link rel="stylesheet" href="arrosage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
 
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Lucas Jardin",
+        "url": "https://www.lucasjardins.com",
+        "logo": "https://www.lucasjardins.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+33 7 88 76 05 71",
+            "contactType": "customer service",
+            "areaServed": "FR",
+            "availableLanguage": "French"
+        },
+        "sameAs": [
+            "https://www.facebook.com/people/Lucas-Jardins/100089258752223/",
+            "https://www.instagram.com/lucasjardins06/"
+        ]
+    }
+    </script>
+
+    <!-- Données structurées - Image principale -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "https://www.lucasjardins.com/images/debroussaillage.png",
+        "height": "800",
+        "width": "1200",
+        "caption": "Illustration de débroussaillage"
+    }
+    </script>
+
+    <!-- Données structurées - Fil d'Ariane -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://www.lucasjardins.com/index.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Débroussaillage",
+                "item": "https://www.lucasjardins.com/debroussaillage.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Données structurées - FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quels services propose Lucas Jardin pour le débroussaillage ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nous proposons un débroussaillage complet de terrains, l'entretien régulier des espaces verts, la prévention des risques incendie et l'évacuation des déchets verts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment contacter Lucas Jardin ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vous pouvez nous contacter par téléphone au 07.88.76.05.71 ou par mail à l'adresse contact@lucasjardins.com."
+                }
+            }
+        ]
+    }
+    </script>
+
+<body>
      <header>
         <div class="page">
             <div class="header">
