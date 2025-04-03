@@ -64,7 +64,7 @@ header h1 {
     overflow: hidden;
 }
 .lesetudiants{
-    margin: auto;
+    margin-top: 80px;
 }
 
 .dropdown-content, .etudiants-profil {
