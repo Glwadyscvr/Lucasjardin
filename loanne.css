@@ -286,7 +286,63 @@ a{
     color: inherit;
     text-decoration: none;   
 }
+/* Mobile phone style */
+@media (max-width: 767px) {
+    /*Content width*/
+    .width {
+        width: 90%;
+        margin: auto;
+    }
 
+    /*navigation bar*/
+    #nav > ul {
+        width: 80%;
+    }
+
+    #services> ul > li {
+        width: 90%;
+    }
+
+    /*services*/
+    #services > .img_1 {
+        flex-wrap: wrap;
+    }
+
+    #services > .img_1 > img {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    /*vegetaux */
+    #vegetaux {
+        flex-direction: column;
+    }
+
+    #vegetaux > div,
+    #vegetaux > div {
+        width: 100%;
+    }
+
+    #vegetaux > .body_img,
+    #vegetaux > .contact_img{
+        display: none;
+    }
+
+    #vegetaux > .text > p > img,
+    #vegetaux > .contact_text > p>img{
+        display: block;
+        width: 200px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .body_img {
+        height: 200px;
+    }
+    .subhead_img {
+        height: 200px;
+    }
+}
  /*Footer*/
 
 footer{
