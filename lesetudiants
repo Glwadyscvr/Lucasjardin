@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Jardin </title>
+<link rel="stylesheet" href="etudiants.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+       <div class="page">
+           <div class="header">
+               <div class="titre">
+                   <h1>LucasJardin</h1>  
+               </div>
+               <hr class="ligne-epaisse">
+               <div class="navigation-bar">
+                   <a href="index.html">ACCUEIL</a>
+                   <div class="dropdown">
+                       <a href="services.html" class="dropbtn">SERVICES</a>
+                       <div class="dropdown-content">
+                           <a href="creationetentretien.html">Création et entretien</a>
+                           <a href="systemedarrosage.html"> Système d'arrosage</a>
+                           <a href="plantation.html">Les plantations</a>
+                           <a href="Elagage.html">Élagage</a>
+                           <a href="Tailledevegetaux.html">Taille de végétaux</a>
+                           <a href="debroussaillage.html">Débroussaillage</a>
+                       </div>
+                   </div>
+                   <a href="engagement.html">ENGAGEMENT</a>
+                   <a href="realisations.html">RÉALISATIONS</a>
+                   <a href="apropos.html">À PROPOS</a>
+                   <a href="faq.html">FAQ</a>
+                   <a href="contact.html">CONTACT</a>
+                   <div class="dropdown2">
+                       <a href="lesetudiants.html" class="etudiants">LES ÉTUDIANTS</a>
+                       <div class="etudiants-profil">
+                           <a href="glwadyscuvier.html">Glwadys Cuvier</a>
+                           <a href="louannerolain.html">Lou-Anne Rolain</a>
+                           <a href="loanne.html">Loanne Limery</a>
+                           <a href="jadevermast.html">Jade Vermast</a>
+                           <a href="romainfievet.html">Romain Fiévet</a>
+                           <a href="raissanaYssoufi.html">Raïssana Yssoufi</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>    
+
+   <div class="lesetudiants">
+    <h2>Retrouvez nos profils ! </h2>
+   <div class="grid-container">
+    <div class="grid-item" style="background-image: url('images/paysage1.png');">
+        <div class="overlay"></div>
+        <a href=".html"><p>Glwadys<br>CUVIER</p></a>
+    </div>
+    <div class="grid-item" style="background-image: url('images/Paysage2.png');">
+        <div class="overlay"></div>
+        <a href="page1.html"><p>Lou-Anne<br>ROLAIN</p></a>
+    </div>
+    <div class="grid-item" style="background-image: url('images/paysage3.jpeg');">
+        <div class="overlay"></div>
+        <a href="page1.html"> <p>Loanne<br>LIMERY</p></a>
+    </div>
+    <div class="grid-item" style="background-image: url('images/paysage4.jpeg');">
+        <div class="overlay"></div>
+        <a href="page1.html"> <p>Jade<br>VERMAST</p></a>
+    </div>
+    <div class="grid-item" style="background-image: url('images/paysage5.jpeg');">
+        <div class="overlay"></div>
+        <a href="page1.html"> <p>Romain Fiévet</p></a>
+    </div>
+    <div class="grid-item" style="background-image: url('images/paysage6.jpeg');">
+        <div class="overlay"></div>
+        <a href="page1.html"> <p>Raïssana Yssoufi </p></a>
+    </div>
+</div>
+</div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="adresse">
+            <h2>ADRESSE</h2>
+            <p>102 Chemin du Génie, 06000 Nice</p>
+        </div>
+        <div class="contact">
+            <h2>CONTACT</h2>
+            <p>Tel : 07.88.76.05.71 <br>
+                Mail : contact@lucasjardins.com
+            </p> 
+        </div>
+        <div class="horaires">
+            <h2>HORAIRES</h2>
+            <p>du lundi au vendredi, de 8h00 – 18h00</p>
+        </div>
+        <a href="https://www.facebook.com/people/Lucas-Jardins/100089258752223/" class="facebook-icon" title="Facebook">
+    <i class="fa-brands fa-facebook"></i>
+    <a href="https://www.instagram.com/lucasjardins06/" class="instagram-icon" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    </footer>
+
+</body>
+</html>
