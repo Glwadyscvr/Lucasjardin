@@ -334,10 +334,11 @@ header h1 {
 
 .contact-form input, .contact-form textarea {
     padding: 10px;
-    border: 1px solid #6a916f;
+    border: 1px solid #354737;
     border-radius: 5px;
     width: 100%;
 }
+
 
 .contact-form, .contact-form input, .contact-form textarea {
     box-sizing: border-box;
@@ -346,7 +347,7 @@ header h1 {
 .contact-form button {
     padding: 10px;
     margin-top: 20px;
-    background-color: #8d895f;
+    background-color: #aca01f;
     color: white;
     border: none;
     border-radius: 5px;
