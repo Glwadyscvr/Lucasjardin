@@ -147,6 +147,7 @@ header h1 {
     height: auto; 
     margin: auto;
     object-fit: contain;
+    margin-bottom: 20px ;
 }
 
 .ligne-fine{
@@ -155,8 +156,10 @@ header h1 {
     background-color: rgb(64, 111, 73);
     width: 100%;
     margin: 6px auto;
+    margin-bottom: 20px;
 }
 .notre-expertise{
+    margin-left: 15px;
     display: flex;
     justify-content: left;
     align-items: left;
@@ -239,6 +242,7 @@ header h1 {
     max-width: 700px;
     margin-top: -20px;
     margin-left: 15%;
+    margin: auto;
 }
 
 .grid-item {
@@ -284,6 +288,11 @@ header h1 {
 }
 
 /* Formulaire */
+.informations{
+    display:flex;
+    gap:60px;
+    margin: auto;
+}
 .formulaire_contact h3 {
     margin-left: 100px;
     font-size: 2rem;
@@ -353,6 +362,17 @@ form label {
     width: 100%; 
     margin-bottom: 5px; 
 }
+.info-section {
+margin-top: 10px;
+} 
+.info-section H2{
+    color: #5d936b;
+    font-weight: bold;
+    font-size: 2rem;
+}  
+.info-section H4{ 
+ margin-top: auto;
+}  
 
 /*footer*/
 footer {
@@ -439,14 +459,65 @@ body {
     flex: 1; 
     text-align: center; 
 } 
+ /*Header*/
+ header {
+    padding: 5px 0; 
+}
+header h1 {
+    font-size: 2em; 
+}
+.navigation-bar {
+    flex-direction: column; 
+    gap: 15px; 
+}
+.navigation-bar a {
+    font-size: 16px; 
+    padding: 8px 15px; 
+}
+.dropdown,.dropdown2 {
+    float: center;
+    overflow: hidden;
+}
+.dropdown-content, .etudiants-profil {
+    position: static; 
+    width: 100%; 
+    text-align: center; 
+    display: none; 
+}
+.dropdown.active .dropdown-content,
+.dropdown2.active .etudiants-profil {
+    display: block;
+}
+/*Tableau services*/
+.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+.stats-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+    .contact-form {
+        padding: 20px; /
+    }
 /* Contact Container */
 #contact-container {
     flex-direction: column;
     gap: 20px; 
     padding: 15px;
 }
-    
-
+.introduction img {
+    max-width: 60%; 
+     display: flex; 
+     flex-direction: column;
+}
+.informations {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; 
+}
+.formulaire_contact h3 {
+   margin:auto;
+   margin-top: 20px;
+}
 /* Formulaire */
 
 .contact-form {
@@ -472,6 +543,7 @@ body {
 h1 {
     font-size: 1.8em;
 }
+
 
 /*Footer*/
 
@@ -541,76 +613,18 @@ footer div p {
     color: #cccccc;
 }
 }
-    /* Responsive pour téléphone */
-@media (max-width: 768px) {
- /*Header*/
-
-    header {
-        padding: 5px 0; 
-    }
-    header h1 {
-        font-size: 2em; 
-    }
-    .navigation-bar {
-        flex-direction: column; 
-        gap: 15px; 
-    }
-    .navigation-bar a {
-        font-size: 16px; 
-        padding: 8px 15px; 
-    }
-    .dropdown,.dropdown2 {
-        float: center;
-        overflow: hidden;
-    }
-    .dropdown-content, .etudiants-profil {
-        position: static; 
-        width: 100%; 
-        text-align: center; 
-        display: none; 
-    }
-    .dropdown.active .dropdown-content,
-    .dropdown2.active .etudiants-profil {
-        display: block;
-    }
     /*Présentation*/
-@media (max-width: 750px) {
-    .introduction img {
-        max-width: 60%; 
-    }
-}
 @media (max-width: 480px) {
     .introduction img {
         max-width: 60%; 
     }
-}
-    @media (max-width: 480px) {
             .engagement {
     display: flex; 
-    flex-direction: column;
 }
-        @media (max-width: 750px) {
-    .introduction img {
-        max-width: 60%; 
-         display: flex; 
-         flex-direction: column;
-    }
-    /*Cadrillage des services */
-    @media (max-width: 768px) {
-        .grid-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .stats-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .grid-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .stats-container {
-            grid-template-columns: 1fr;
-        }
-    }   
+.grid-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+.stats-container {
+    grid-template-columns: 1fr;
+}     
 }
