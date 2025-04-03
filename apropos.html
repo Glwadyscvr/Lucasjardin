@@ -1,69 +1,76 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Lucas Jardin - Jardinier paysagiste à Nice depuis 25 ans. Création et entretien d'espaces verts professionnels.">
-    
-    <link rel="preload" href="apropos.css" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Lucas Jardin - Paysagiste à Nice depuis 25 ans. Création et entretien de jardins professionnels.">
+    <link rel="preload" href="apropos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lucasjardins.com/apropos.html">
-    <meta property="og:title" content="Lucas Jardin - Paysagiste professionnel à Nice">
-    <meta property="og:description" content="25 ans d'expérience en création et entretien de jardins. Services complets de paysagisme dans la région niçoise.">
-    <meta property="og:image" content="https://www.lucasjardins.com/images/og-image.jpg">
+    <meta property="og:title" content="Lucas Jardin - Paysagiste professionnel à Nice depuis 25 ans">
+    <meta property="og:description" content="Découvrez notre équipe de paysagistes passionnés. Création et entretien d'espaces verts sur mesure dans la région niçoise.">
+    <meta property="og:image" content="https://www.lucasjardins.com/images/og-image.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="apropos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <meta property="og:image:alt" content="Lucas Jardin - Équipe de paysagistes à Nice">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lucas Jardins">
+
     <!-- Données structurées -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Lucas Jardins",
-        "image": "https://www.lucasjardins.com/images/logo.png",
-        "@id": "https://www.lucasjardins.com",
-        "url": "https://www.lucasjardins.com",
-        "telephone": "+33788760571",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "102 Chemin du Génie",
-            "addressLocality": "Nice",
-            "postalCode": "06000",
-            "addressCountry": "FR"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "43.738360",
-            "longitude": "7.219181"
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-        },
-        "sameAs": [
-            "https://www.facebook.com/people/Lucas-Jardins/100089258752223/",
-            "https://www.instagram.com/lucasjardins06/"
-        ]
-    }
-    </script>
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Lucas Jardins",
+            "image": "https://www.lucasjardins.com/images/logo.png",
+            "@id": "https://www.lucasjardins.com",
+            "url": "https://www.lucasjardins.com",
+            "telephone": "+33788760571",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "102 Chemin du Génie",
+                "addressLocality": "Nice",
+                "postalCode": "06000",
+                "addressCountry": "FR"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "43.738360",
+                "longitude": "7.219181"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": "Lucas Bertrand",
+                "jobTitle": "Fondateur et Paysagiste"
+            },
+            "numberOfEmployees": "11",
+            "foundingDate": "1998",
+            "sameAs": [
+                "https://www.facebook.com/people/Lucas-Jardins/100089258752223/",
+                "https://www.instagram.com/lucasjardins06/"
+            ]
+        }
+        </script>
+
     <title>Lucas Jardin - Paysagiste professionnel à Nice depuis 25 ans</title>
+    <noscript><link rel="stylesheet" href="apropos.css"></noscript>
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
     <header>
@@ -115,15 +122,13 @@
     <div class="contenu">
         <div class="paire-contenu">
             <div class="image-container">
-                <img src="images/1apropos.avif" 
-                     srcset="images/1apropos.avif 800w, images/1apropos-small.avif 400w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     alt="Jardin entretenu par Lucas Jardins" 
-                     class="img1"
-                     loading="eager"
-                     width="800"
-                     height="600"
-                     decoding="async">
+                <img src="images/1apropos.webp" 
+                          width="800" 
+                          height="600" 
+                          alt="Équipe Lucas Jardins au travail" 
+                          loading="lazy"
+                          decoding="async">
+                          
             </div>
             <div class="texte-container">
                 <div class="presentation">
@@ -138,14 +143,7 @@
 
         <div class="paire-contenu inverse">
             <div class="image-container">
-                <img src="images/a_propos-equipe-dynamique.avif" 
-                     srcset="images/a_propos-equipe-dynamique.avif 800w, images/a_propos-equipe-dynamique-small.avif 400w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     alt="Notre équipe en action" 
-                     loading="lazy"
-                     width="800"
-                     height="600"
-                     decoding="async">
+                <img src="images/a_propos-equipe-dynamique.webp">
             </div>
             <div class="texte-container">
                 <div class="presentation">
