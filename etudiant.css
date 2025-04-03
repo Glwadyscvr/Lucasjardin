@@ -63,6 +63,9 @@ header h1 {
     float: left;
     overflow: hidden;
 }
+.lesetudiants{
+    margin: auto;
+}
 
 .dropdown-content, .etudiants-profil {
     display: none;
