@@ -144,7 +144,7 @@ header h1 {
 .engagement img {
     width: 50%; 
     max-width: 900px;
-    height: auto; 
+    height: 450px; 
     margin: auto;
     object-fit: contain;
     margin-bottom: 20px ;
