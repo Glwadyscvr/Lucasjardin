@@ -578,7 +578,6 @@ footer div p {
 @media (max-width: 750px) {
     .introduction img {
         max-width: 60%; 
-
     }
 }
 @media (max-width: 480px) {
@@ -586,6 +585,17 @@ footer div p {
         max-width: 60%; 
     }
 }
+    @media (max-width: 480px) {
+            .engagement {
+    display: flex; 
+    flex-direction: column;
+}
+        @media (max-width: 750px) {
+    .introduction img {
+        max-width: 60%; 
+         display: flex; 
+         flex-direction: column;
+    }
     /*Cadrillage des services */
     @media (max-width: 768px) {
         .grid-container {
@@ -603,8 +613,4 @@ footer div p {
         .stats-container {
             grid-template-columns: 1fr;
         }
-        .engagement {
-    display: flex; 
-    flex-direction: column;
-}
     }   
