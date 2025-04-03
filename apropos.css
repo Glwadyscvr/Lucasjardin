@@ -132,13 +132,7 @@ header h1 {
     border: none;
 }
 
-/* Contenu principal */
-.main-wrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
+/* Main content */
 .contenu {
     width: 100%;
     max-width: 1200px;
@@ -147,7 +141,7 @@ header h1 {
     flex: 1;
 }
 
-/* Styles image-texte */
+/* Image-text pairs */
 .paire-contenu {
     display: flex;
     width: 100%;
@@ -177,7 +171,7 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Grille de chiffres */
+/* Numbers grid */
 .chiffres-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -206,7 +200,7 @@ header h1 {
     font-weight: normal;
 }
 
-/* Carte */
+/* Map */
 .maps-container {
     width: 100%;
     margin: 40px 0;
@@ -343,5 +337,15 @@ footer .social-icons {
     
     .social-icons {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chiffres-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .qui-sommes-nous-titre {
+        font-size: 2.5rem;
     }
 }
