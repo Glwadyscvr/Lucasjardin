@@ -15,18 +15,40 @@ body {
 /* Header */
 header {
     width: 100%;
-    background-color:rgb(87, 113, 88) ;
-    color: white;
+    background-color:rgb(87, 113, 88);
+    color:#ffffff;
     padding: 10px 0;
     padding-top: 5px;
-    text-align: center;
+    margin-right: 4cm;
     height: auto; 
+}
+
+.Présentation{
+    display: block;
+    position: center;
+    Margin: auto;
+    width: 50%;
 }
 
 header h1 {
     margin: 1px;
     font-size: 2.5em;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .ligne-epaisse {
@@ -91,9 +113,9 @@ header h1 {
     display: block;
 }
 
-/*Jade*/
+/*Engagement*/
 
-.JadeVermast{
+.Engagement{
     display: block;
     position: center;
     Margin: auto;
@@ -248,4 +270,6 @@ footer div p {
 .contact {
     grid-column: 2;
 }
+
+
 
