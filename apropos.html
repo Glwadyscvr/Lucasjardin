@@ -2,11 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lucas Jardin - Paysagiste à Nice depuis 25 ans. Création et entretien de jardins professionnels.">
-    <link rel="preload" href="apropos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -19,6 +16,10 @@
     <meta property="og:image:alt" content="Lucas Jardin - Équipe de paysagistes à Nice">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="Lucas Jardins">
+    <link rel="canonical" href="https://www.lucasjardins.com/apropos.html">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <!-- Données structurées -->
     <script type="application/ld+json">
@@ -66,11 +67,11 @@
                 "https://www.instagram.com/lucasjardins06/"
             ]
         }
-        </script>
+    </script>
 
     <title>Lucas Jardin - Paysagiste professionnel à Nice depuis 25 ans</title>
-    <noscript><link rel="stylesheet" href="apropos.css"></noscript>
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="apropos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -82,8 +83,8 @@
                 <hr class="ligne-epaisse">
                 <div class="navigation-bar">
                     <a href="index.html">ACCUEIL</a>
-                    <div class="dropdown">
-                        <a href="services.html" class="dropbtn">SERVICES</a>
+                    <div class="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a href="services.html" class="dropbtn" id="services-dropdown-btn">SERVICES</a>
                         <div class="dropdown-content">
                             <a href="creationetentretien.html">Création et entretien</a>
                             <a href="systemedarrosage.html">Système d'arrosage</a>
@@ -98,8 +99,8 @@
                     <a href="apropos.html">À PROPOS</a>
                     <a href="faq.html">FAQ</a>
                     <a href="contact.html">CONTACT</a>
-                    <div class="dropdown2">
-                        <a href="lesetudiants.html" class="etudiants">LES ÉTUDIANTS</a>
+                    <div class="dropdown2" aria-haspopup="true" aria-expanded="false">
+                      <a href="lesetudiants.html" class="etudiants" id="etudiants-dropdown-btn">LES ÉTUDIANTS</a>
                         <div class="etudiants-profil">
                             <a href="glwadyscuvier.html">Glwadys Cuvier</a>
                             <a href="louannerolain.html">Lou-Anne Rolain</a>
@@ -114,6 +115,7 @@
         </div>
     </header>
 
+ <main class="contenu">
     <section class="qui-sommes-nous">
         <h1 class="qui-sommes-nous-titre">Qui sommes-nous</h1>
         <hr class="qui-sommes-nous-divider">
@@ -123,12 +125,10 @@
         <div class="paire-contenu">
             <div class="image-container">
                 <img src="images/1apropos.webp" 
-                          width="800" 
-                          height="600" 
-                          alt="Équipe Lucas Jardins au travail" 
-                          loading="lazy"
-                          decoding="async">
-                          
+                     width="800" 
+                     height="600" 
+                     alt="Équipe Lucas Jardins au travail" 
+                     loading="lazy">
             </div>
             <div class="texte-container">
                 <div class="presentation">
@@ -143,7 +143,11 @@
 
         <div class="paire-contenu inverse">
             <div class="image-container">
-                <img src="images/a_propos-equipe-dynamique.webp" alt="Équipe dynamique" loading="lazy">
+                <img src="images/a_propos-equipe-dynamique.webp" 
+                     width="800" 
+                     height="600" 
+                     alt="Équipe dynamique" 
+                     loading="lazy">
             </div>
             <div class="texte-container">
                 <div class="presentation">
@@ -200,40 +204,39 @@
                 </div>
             </div>
         </div>
-
+ </main>
         <footer>
-            <div class="footer-container">
-                <div class="adresse">
-                    <h2>ADRESSE</h2>
-                    <p>102 Chemin du Génie, 06000 Nice</p>
-                </div>
-                <div class="contact">
-                    <h2>CONTACT</h2>
-                    <p>Tel : 07.88.76.05.71 <br>
-                        Mail : contact@lucasjardins.com
-                    </p>
-                </div>
-                <div class="horaires">
-                    <h2>HORAIRES</h2>
-                    <p>du lundi au vendredi, de 8h00 – 18h00</p>
-                </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/people/Lucas-Jardins/100089258752223/" 
-                       class="facebook-icon" 
-                       title="Facebook"
-                       aria-label="Page Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/lucasjardins06/" 
-                       class="instagram-icon" 
-                       title="Instagram"
-                       aria-label="Page Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </footer>
+          <div class="footer-container">
+              <div class="adresse">
+                  <h2>ADRESSE</h2>
+                  <p>102 Chemin du Génie, 06000 Nice</p>
+              </div>
+              <div class="contact">
+                  <h2>CONTACT</h2>
+                  <p>Tel : 07.88.76.05.71<br>
+                      Mail : contact@lucasjardins.com
+                  </p>
+              </div>
+              <div class="horaires">
+                  <h2>HORAIRES</h2>
+                  <p>du lundi au vendredi, de 8h00 – 18h00</p>
+              </div>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/people/Lucas-Jardins/100089258752223/" 
+                     class="facebook-icon" 
+                     title="Facebook"
+                     aria-label="Page Facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lucasjardins06/" 
+                     class="instagram-icon" 
+                     title="Instagram"
+                     aria-label="Page Instagram">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
+          </div>
+      </footer>      
     </div>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </body>
 </html>
