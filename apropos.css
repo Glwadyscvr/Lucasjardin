@@ -17,8 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header */
@@ -41,6 +39,7 @@ header h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Ligne séparatrice */
 .ligne-epaisse {
     border: none;
     height: 10px;
@@ -57,12 +56,6 @@ header h1 {
     gap: 15px;
     padding: 10px 0;
     flex-wrap: wrap;
-}
-
-.navigation-bar > * {
-    display: inline-flex;
-    align-items: center;
-    height: 40px;
 }
 
 .navigation-bar a, 
@@ -166,11 +159,7 @@ header h1 {
     flex-direction: row-reverse;
 }
 
-.paire-contenu .image-container {
-    flex: 1;
-    padding: 0 15px;
-}
-
+.paire-contenu .image-container, 
 .paire-contenu .texte-container {
     flex: 1;
     padding: 0 15px;
@@ -302,6 +291,7 @@ footer {
     color: rgb(87, 113, 88);
 }
 
+/* Focus pour la navigation */
 a:focus, 
 .dropbtn:focus, 
 .etudiants:focus {
@@ -310,32 +300,27 @@ a:focus,
 }
 
 a, .dropbtn, .etudiants {
-    transition: 
-        color 0.3s ease, 
-        outline-offset 0.2s ease, 
-        background-color 0.15s ease;
+    transition: color 0.3s ease, outline-offset 0.2s ease, background-color 0.15s ease;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .paire-contenu, 
-    .paire-contenu.inverse {
+    .paire-contenu {
         flex-direction: column;
     }
-    
-    .paire-contenu .image-container,
-    .paire-contenu .texte-container {
-        padding: 15px 0;
+
+    .paire-contenu img {
+        max-width: 100%;
     }
-    
+
     .chiffres-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
-    
+
     .navigation-bar {
         gap: 10px;
     }
-    
+
     .navigation-bar a, 
     .dropbtn, 
     .etudiants {
@@ -354,7 +339,7 @@ a, .dropbtn, .etudiants {
         text-align: center;
         margin-bottom: 0;
     }
-    
+
     .social-icons {
         justify-content: center;
         margin-top: 20px;
@@ -363,9 +348,9 @@ a, .dropbtn, .etudiants {
 
 @media (max-width: 480px) {
     .chiffres-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
-    
+
     .qui-sommes-nous-titre {
         font-size: 2rem;
     }
