@@ -63,10 +63,6 @@ header h1 {
     float: left;
     overflow: hidden;
 }
-.lesetudiants{
-    margin-top: 50px;
-    margin-bottom:50px;
-}
 
 .dropdown-content, .etudiants-profil {
     display: none;
@@ -95,21 +91,26 @@ header h1 {
     display: block;
 }
 
-h2{
+.lesetudiants h2{
     font-weight: bold;
     color:rgb(92, 144, 92);
     text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px 40px;
     width: 80%;
     max-width: 700px;
     margin-top: -20px;
     margin-left: 15%;
     margin: auto;
+   
+
 }
 
 .grid-item {
@@ -125,15 +126,27 @@ h2{
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+    border-radius: 20px;
+    box-shadow:4px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
-
+.bordereau {
+    border: none;
+    height: 20px;
+    opacity: 50%;
+    background-color: rgba(108, 143, 126, 0.584);
+    width: 70%;
+    margin: 20px auto;
+    position:relative; 
+    margin-top: 70px;
+}
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(66, 91, 66, 0.5); /* Vert semi-transparent */
+    background: rgba(66, 91, 66, 0.465); /* Vert semi-transparent */
 }
 
 .grid-item p {
@@ -151,7 +164,7 @@ h2{
 }
 .grid-item a:hover {
     text-decoration: none;
-    color: #063c10;
+    color: #b2d0b7e9;
 }
 
 /*footer*/
@@ -239,7 +252,6 @@ footer div p {
         text-align: center; 
     } 
      /*Header*/
-
      header {
         padding: 5px 0; 
     }
